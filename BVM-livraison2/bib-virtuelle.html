@@ -1,0 +1,211 @@
+  <aside id="gauche">
+    <nav>
+      <ul>
+        <li><a href="#">Présentation</a></li>
+        <li><a href="#">Fonctionnement et utilisation de la bibliothèque virtuelle </a></li>
+        <li><a href="#">Perspectives : De la base de données à la bibliothèque intellectuelle </a></li>
+        <li > <button  class="plus" title="Voir le sous menu">CATALOGUE DE LA BRÈDE </button>
+          <ul class="sub-menu" >
+            <li><a href="#">Du manuscrit à l’édition </a></li>
+            <li><a href="#">Genèse du Catalogue </a></li>
+            <li><a href="#">L’enrichissement du Catalogue </a></li>
+            
+          </ul>
+        </li>
+        <li><button  class="plus" title="Voir le sous menu">BIBLIOTHÈQUE DE LA BRÈDE</button>
+          <ul class="sub-menu">
+            <li><a href="#">Le poids de l’héritage </a></li>
+            <li><a href="#">Une nouvelle analyse </a></li>
+          </ul>
+        </li>
+        <li><button class="plus deuxlignes" title="Voir le sous menu">ANNEXE DOCUMENTAIRE</button>
+          <ul class="sub-menu">
+            <li><a href="#">L’inventaire après décès de Jacob de Secondat (1619)</a></li>
+            <li><a href="#">Le livre de raison de Jacques de Secondat (1699)</a></li>
+            <li><a href="#">Pierre Taillefer, « De la salle des gardes à la bibliothèque de La Brède »</a></li>
+            <li><a href="#">Les reçus de libraires (1717-1722)</a></li>
+            <li><a href="#">Les ouvrages provenant de Malebranche (1715-1732)</a></li>
+            <li><a href="#">Les <em>Veneres</em> du Catalogue manuscrit (vers 1732)</a></li>
+            <li><a href="#">Recherches sur l’anatomie et la physiologie (1738)</a></li>
+            <li><a href="#">L’inventaire après décès du domicile parisien (5 mars 1755)</a></li>
+          
+          </ul>
+        </li>
+            <li><a href="#">Les catalogues de vente de 1926</a></li>
+          
+      </ul>
+    </nav>
+     <section class="search">
+      <span class="open">Recherche</span>
+      <form>
+        <input type="text" value="rechercher" id="rechercher" value="rechercher" />
+        <input class="submit" type="submit" value="OK" />
+        <label> menu select</label>
+        <div class="selectStyled">
+          <select name="select" id="select">
+            <option value="#">Accueil</option>
+            <option value="#">Qui sommes-nous ?</option>
+          </select>
+        </div>
+        <input class="submit" type="submit" value="OK" />
+      </form>
+    </section> 
+  </aside> 
+
+  <!-- ///////////////////////////////////////////// Article ///////////////////////////////////////////////////////   -->
+
+<article>
+  <!-- ////////////////////////////////////// Formulaire de recherche //////////////////////////////////////////////   -->
+  <section>
+  <h1 class="open" title="cliquer pour ouvrir ou fermer la fenêtre" >Consulter</h3>
+  <form action="" method="post" enctype="multipart/form-data" name="form1">
+    <div>
+      <label>etiquette 1 </label>
+      <div>
+        <input type="text" name="id1" id="id1">
+      </div>
+    </div>
+    <div>
+      <label>etiquette 1 </label>
+      <div>
+        <input type="text" name="id1" id="id1">
+        <input type="text" name="id1" id="id1">
+        <input type="text" name="id1" id="id1">
+      </div>
+    </div>
+     <div>
+      <label>bouton 1</label>
+      <div>
+        <input type="submit" class="submit" name="bouton 1" id="bouton 1" value="Envoyer">
+      </div>
+
+    </div>
+    <div>
+<!-- Pour les <input type="checkbox"> et <input type="radio"> il faut que le label soit placé après qu'il est un attribut for="" qui corresponde à l' id="" de l'input correspondant--> 
+        <label> checkbox </label>
+        <div>
+          <input type="checkbox" name="cc1" id="checkbox1">
+          <label for="checkbox1">&nbsp;</label><span>choix 1</span>
+          <input type="checkbox" name="cc2" id="checkbox2">
+          <label for="checkbox2">&nbsp;</label><span>et si le texte est super long </span>
+          <input type="checkbox" name="cc3" id="checkbox3">
+          <label for="checkbox3">&nbsp;</label><span>choix 3</span> 
+        </div>
+      
+    </div>
+    <div>
+      <label> radio </label>
+      <div>
+        <input type="radio" name="r1" id="radio1" value="radio">
+        <label for="radio1">&nbsp;</label><span>radio 1</span>
+        <input type="radio" name="r2" id="radio2" value="radio">
+        <label for="radio2">&nbsp;</label><span>radio 2</span>
+        <input type="radio" name="r3" id="radio3" value="radio">
+        <label for="radio3">&nbsp;</label><span>radio 3 </span>
+      </div>
+    </div>
+    <div>
+      <label>Bouton radio</label>
+      <div>
+        <input type="radio" name="RadioGroup1" value="bouton radio" id="RadioGroup1_0">
+        <label for="RadioGroup1_0"></label>
+      </div>
+    </div>
+    <div>
+      <label>Bouton radio</label>
+      <div>
+        <input type="radio" name="RadioGroup1" value="bouton radio" id="RadioGroup1_1">
+                <label for="RadioGroup1_1"></label>
+      </div>
+    </div>
+
+    <div>    
+      <label> menu select</label>
+      <div class="selectStyled">
+        <select name="select" id="select">
+          <option value="#">Accueil</option>
+          <option value="#">Qui sommes-nous ?</option>
+        </select>
+      </div>
+    </div>
+      
+    <div>
+      <label>champ text</label>
+      <div>
+        <textarea name="textArea" id="textArea"></textarea>
+      </div>
+    </div>
+    <div>
+      <label>fichiers</label>
+      <div>
+        <input type="file" name="fichiers" id="fichiers">
+      </div>
+    </div>
+      
+    <div>
+      <div>
+        <input class="submit" name="submit" type="submit" value="Valider">
+      </div>
+    </div>
+  </form>
+</section>
+  <!-- ////////////////////////////////////// Resultat de la recherche //////////////////////////////////////////////  -->
+<section>
+  <h1> Résultat consulter </h1>
+  <ul class="listeResult">
+    <li><a href="#"><span class="vedette"> Damascenis (Joannis)</span> Ortodoxæ fidei libri quatuor græc. lat. Jac. Fabro inteprete. Accessit in eosdem libros Jodoici 
+      Clichtovei enarratio. Ejusd. Jo. Damasceni de iis qui in fide dormierunt liber item græc. lat. Io. Oecolampadio interprete unà cum aliis ejusdem operibus. 
+      <span class="editeur">Basileæ 1548. In-fol., 1 vol.</span></a></li>
+      <li><a href="#"><span class="vedette"> Damascenis (Joannis)</span> Ortodoxæ fidei libri quatuor græc. lat. Jac. Fabro inteprete. Accessit in eosdem libros Jodoici 
+      Clichtovei enarratio. Ejusd. Jo. Damasceni de iis qui in fide dormierunt liber item græc. lat. Io. Oecolampadio interprete unà cum aliis ejusdem operibus. 
+      <span class="editeur">Basileæ 1548. In-fol., 1 vol.</span></a></li>
+      <li><a href="#"><span class="vedette"> Damascenis (Joannis)</span> Ortodoxæ fidei libri quatuor græc. lat. Jac. Fabro inteprete. Accessit in eosdem libros Jodoici 
+      Clichtovei enarratio. Ejusd. Jo. Damasceni de iis qui in fide dormierunt liber item græc. lat. Io. Oecolampadio interprete unà cum aliis ejusdem operibus. 
+      <span class="editeur">Basileæ 1548. In-fol., 1 vol.</span></a></li>
+</ul>
+</section>
+
+
+
+  <!-- ///////////////////////////////// Réponse du formulaire (fiche) //////////////////////////////////////////////  -->
+<section>
+      <h1 class="open" title="Cliquez pour ouvrir ou fermer cette partie"> Notice du catalogue de la brède </h1>
+      <div class="gris">
+        <p class="serif">
+          Damascenis (Joannis) Ortodoxæ fidei libri quatuor græc. lat. Jac. Fabro inteprete. Accessit in eosdem libros Jodoici 
+          Clichtovei enarratio. Ejusd. Jo. Damasceni de iis qui in fide dormierunt liber item græc. lat. Io. Oecolampadio interprete 
+          unà cum aliis ejusdem operibus. <span class="editeur">Basileæ 1548. In-fol., 1 vol</span> 
+        </p>
+      </div>
+      <h4>Auteur </h4>
+      <p>Jean Damascène, saint </p>
+      <h4>Remarque sur cette notice </h4>
+      <p>Ex : D’une main différente : « Le 2. manque. » </p>
+      <h2 class="open" title="Cliquez pour ouvrir ou fermer cette partie">AUTRES SOURCES BIBLIOGRAPHIQUES </h2>
+      <fieldset>
+        <legend>LOCALISATION DE L’EXEMPLAIRE</legend>
+        <p>Bordeaux, BM, D 1640</p>
+      <h4>NOTICE DE LA BIBLIOTHÈQUE DE BORDEAUX</h4>
+      <h5>Auteur</h5>
+      <p>Jean Damascène . saint</p>
+      <h5>Contribution</h5>
+      <ul>
+        <li>Fabre, Jacques. Trad</li>
+        <li> Clichtove, Josse Van (1470-1543). Commentateur</li>
+        <li> Oecolampade, Johann Hussgen (1482-1531). Trad.</li>
+        <li>Petri, Heinrich (1508-1579). Impr.</li>
+        <li> Montesquieu, Charles-Louis de Secondat (1689-1755).</li>
+      </ul>
+      <h5>Contient</h5>
+      <p>Joan. Damasceni historia duorum Christi militum, e graeco in
+latinum versa</p>
+ <h4>Note d’exemplaire</h4>
+      <p>Reliure 16<sup>e</sup>&nbsp;siècle, peau retournée, teintée en noir,
+médaillon à chaud au centre des plats (busteà 6 nerfs et
+fleurons, encadrement d'un filet doré, tranches teintées.
+Mention ms. au contreplat in
+DCCLXX-Eta-XIII</p>
+      </fieldset>
+      </section>
+
+</article>

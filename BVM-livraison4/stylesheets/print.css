@@ -1,0 +1,118 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  /* line 5, ../sass/print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 13, ../sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 17, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 21, ../sass/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 27, ../sass/print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 32, ../sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 37, ../sass/print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 42, ../sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 46, ../sass/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 2cm 3cm;
+}
+
+  /* line 56, ../sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 62, ../sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 66, ../sass/print.scss */
+  header, aside, #externe {
+    display: none;
+  }
+
+  /* line 69, ../sass/print.scss */
+  .serif {
+    font-family: "Georgia", Times, serif;
+  }
+
+  /* line 72, ../sass/print.scss */
+  h1 {
+    font-size: 14pt;
+    text-transform: uppercase;
+  }
+
+  /* line 76, ../sass/print.scss */
+  h2 {
+    font-size: 14pt;
+  }
+
+  /* line 79, ../sass/print.scss */
+  h3 {
+    font-size: 13pt;
+  }
+
+  /* line 82, ../sass/print.scss */
+  h4 {
+    font-size: 12pt;
+  }
+
+  /* line 85, ../sass/print.scss */
+  h5 {
+    font-size: 10pt;
+  }
+
+  /* line 88, ../sass/print.scss */
+  p {
+    line-height: 140%;
+    text-align: justify;
+  }
+}

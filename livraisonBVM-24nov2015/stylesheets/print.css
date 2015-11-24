@@ -1,0 +1,281 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  /* line 17, ../sass/print.scss */
+  * {
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 24, ../sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+    color: inherit;
+  }
+
+  /* line 30, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    text-decoration: none;
+  }
+
+  /* line 34, ../sass/print.scss */
+  a:after {
+    content: " (" attr(href) ") ";
+    text-decoration: none;
+  }
+
+  /* line 40, ../sass/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+    font-size: smaller;
+    color: #510b24;
+  }
+
+  /* line 46, ../sass/print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 52, ../sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 58, ../sass/print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 62, ../sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 67, ../sass/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 2cm 3cm;
+    border-top: 0.25cm solid grey;
+    mso-header-margin: .15cm;
+    mso-footer-margin: .5in;
+    mso-paper-source: 0;
+  }
+  /* line 80, ../sass/print.scss */
+  #breadcrumb {
+    font-size: 10pt;
+    margin-bottom: 1.3cm;
+  }
+  /* line 83, ../sass/print.scss */
+  #breadcrumb img {
+    vertical-align: middle;
+    width: 1.58cm;
+    height: 1.18cm;
+    margin-right: 0.65cm;
+  }
+
+  /* line 90, ../sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 97, ../sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 102, ../sass/print.scss */
+  header, aside, .sommaire, #externe, a.back-to-top, img[alt="HAUT"], footer, h4[title="cliquer pour ouvrir ou fermer le sommaire"] {
+    display: none !important;
+  }
+
+  /* line 105, ../sass/print.scss */
+  .serif {
+    font-family: "Georgia", Times, serif;
+  }
+
+  /* line 108, ../sass/print.scss */
+  h1 {
+    font-size: 16pt;
+    font-weight: lighter;
+    color: #000;
+  }
+
+  /* line 113, ../sass/print.scss */
+  h2 {
+    font-size: 11pt;
+    color: #510b24;
+    font-weight: lighter;
+    text-transform: uppercase;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* line 121, ../sass/print.scss */
+  h3 {
+    font-size: 9pt;
+  }
+
+  /* line 124, ../sass/print.scss */
+  h4 {
+    font-size: 7pt;
+  }
+
+  /* line 127, ../sass/print.scss */
+  h5 {
+    font-size: 10pt;
+  }
+
+  /* line 130, ../sass/print.scss */
+  p {
+    text-align: justify;
+  }
+
+  /* line 135, ../sass/print.scss */
+  .separateur {
+    text-align: center;
+  }
+
+  /* line 139, ../sass/print.scss */
+  .smallcaps {
+    font-variant: small-caps;
+  }
+
+  /* line 144, ../sass/print.scss */
+  #notes {
+    page-break-before: always;
+  }
+  /* line 146, ../sass/print.scss */
+  #notes h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-top: 1px solid black;
+    padding-top: 0.4cm;
+  }
+
+  /* line 156, ../sass/print.scss */
+  body {
+    font-size: 0.7rem;
+    line-height: 150%;
+  }
+
+  /* line 161, ../sass/print.scss */
+  .deuxImg figure {
+    width: 45%;
+    float: left;
+    margin: 2.5%;
+    border: 0 none !important;
+  }
+
+  /* line 168, ../sass/print.scss */
+  .uneImg figure, .tableauImg a img {
+    width: 45%;
+    float: none;
+    text-align: left;
+    margin: 2.5%;
+  }
+
+  /* line 174, ../sass/print.scss */
+  .encadre {
+    border: 1pt solid #666;
+    padding: 0.25cm;
+  }
+
+  /* line 181, ../sass/print.scss */
+  table {
+    text-align: left;
+    margin: 30px 0 20px 10px;
+    color: #303030;
+  }
+
+  /* line 187, ../sass/print.scss */
+  caption {
+    font-weight: bolder;
+    padding-bottom: 20px;
+    color: #303030;
+  }
+
+  /* line 193, ../sass/print.scss */
+  thead {
+    font-weight: bolder;
+    text-align: center;
+    color: #303030;
+  }
+
+  /* line 200, ../sass/print.scss */
+  .bord {
+    border: 1px solid #dad9d9;
+    width: 98%;
+  }
+  /* line 204, ../sass/print.scss */
+  .bord td, .bord th {
+    border: 1px solid #dad9d9;
+    padding: 1%;
+  }
+
+  /* line 210, ../sass/print.scss */
+  .sansbord, .ligne {
+    width: 96%;
+    max-width: 96%;
+  }
+  /* line 213, ../sass/print.scss */
+  .sansbord tr, .ligne tr {
+    padding: 0;
+    line-height: 0.7em;
+  }
+  /* line 216, ../sass/print.scss */
+  .sansbord tr td, .ligne tr td {
+    padding: 0.5% 3%;
+    line-height: 1.4em;
+  }
+  /* line 219, ../sass/print.scss */
+  .sansbord tr td p, .ligne tr td p {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 227, ../sass/print.scss */
+  .ligne {
+    font-size: 0.8em;
+  }
+  /* line 229, ../sass/print.scss */
+  .ligne tbody {
+    border-bottom: 1px solid #dad9d9;
+  }
+  /* line 233, ../sass/print.scss */
+  .ligne tr {
+    border-top: 1px solid #dad9d9;
+  }
+
+  /* line 239, ../sass/print.scss */
+  .abr {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+  /* line 243, ../sass/print.scss */
+  .abr td {
+    padding: 3% 2%;
+    vertical-align: top;
+  }
+
+  /* line 250, ../sass/print.scss */
+  .nav-toggle {
+    display: none;
+    visibility: hidden;
+  }
+}
